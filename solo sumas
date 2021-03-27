@@ -1,0 +1,29 @@
+<script>
+Neri fermin problemas 2
+
+
+class promedio
+{
+	result()
+  {
+    let n=0;
+    for(let i=0;i<10;i++)
+      n+=cal[i];
+    return n;
+  }
+}
+let cal=[10];  
+for(let j=0;j<10;j++)
+{
+	do{  
+		cal[j]=parseFloat(prompt("Ingresa una calificación: "));
+	}while(!(cal[j]>=0 && cal[j]<=10));
+}  
+let pro=new promedio(),a=pro.result(cal)/10,d=[];  
+for(let h=0;h<10;h++)
+{
+	if(cal[h]>a)
+  	d[h]=cal[h];
+} 
+document.write("Promedio: <br>"+a+"<br>Números mayores a promedio: <br>"+d);  
+</script>
